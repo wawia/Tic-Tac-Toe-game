@@ -1,0 +1,88 @@
+:root{
+    --main-color-for-page: lightblue;
+    --sidebar-color: gray;
+    --size-of-space: 200px;
+}
+
+*{
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+nav{
+    background-color: var(--sidebar-color);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav>button{
+    margin: 50px;
+    height: 80px;
+    width: 75%;
+    font-size: large;
+    background-color: var(--main-color-for-page);
+    border-radius: 20%;
+    border: 3px solid aqua
+}
+
+main{
+    background-color: var(--main-color-for-page);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.container{
+    display: grid;
+    grid-template: var(--size-of-space) var(--size-of-space) var(--size-of-space)/ var(--size-of-space) var(--size-of-space) var(--size-of-space)
+}
+
+.space{
+    height: var(--size-of-space);
+    width: var(--size-of-space);
+    background-color: white;
+    border: 1px solid black;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22, 0, 121, 0.4);
+    visibility: hidden;
+}
+
+.popup>div{
+    position: relative;
+    font-size: 100px;
+    color: white;
+}
+
+.popup>button{
+    margin: 50px;
+    height: 100px;
+    width: 300px;
+    font-size: 50px;
+    border-radius: 5%;
+    background-color: rgba(22, 0, 121, 0.8);
+    color: white;
+}
